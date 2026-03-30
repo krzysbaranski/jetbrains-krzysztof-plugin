@@ -50,14 +50,15 @@ changelog {
 }
 
 // Configure Gradle Kover Plugin - read more: https://github.com/Kotlin/kotlinx-kover#configuration
-// TODO: Re-enable koverReport configuration after build migration is complete
-// koverReport {
-//     defaults {
-//         xml {
-//             onCheck = true
-//         }
-//     }
-// }
+kover {
+    reports {
+        total {
+            xml {
+                onCheck = true
+            }
+        }
+    }
+}
 
 tasks {
     wrapper {
