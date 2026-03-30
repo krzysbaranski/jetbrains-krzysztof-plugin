@@ -64,4 +64,8 @@ tasks {
     wrapper {
         gradleVersion = properties("gradleVersion").get()
     }
+
+    test {
+        failOnNoDiscoveredTests = false
+    }
 }
