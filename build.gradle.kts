@@ -44,7 +44,7 @@ intellijPlatform {
 
     pluginVerification {
         ides {
-            ide(properties("platformType"), properties("platformVersion"))
+            create(properties("platformType").get(), properties("platformVersion").get())
         }
     }
 }
